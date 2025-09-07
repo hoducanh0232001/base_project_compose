@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Base Compose Project"
 include(":app")
- 
+include(":data")
+include(":core")
