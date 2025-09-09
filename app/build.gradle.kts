@@ -25,7 +25,7 @@ android {
             // Thêm field vào BuildConfig
             buildConfigField("String", "BASE_URL", "\"https://dev.example.com/api/\"")
             buildConfigField("Boolean", "ENABLE_LOG", "true")
-            buildConfigField("Boolean", "TOKEN", "11111111111111111111111111111111")
+            buildConfigField("String", "TOKEN", "\"123123123123\"")
 
         }
         release {
@@ -36,7 +36,7 @@ android {
             )
             buildConfigField("String", "BASE_URL", "\"https://prod.example.com/api/\"")
             buildConfigField("Boolean", "ENABLE_LOG", "false")
-            buildConfigField("String", "TOKEN", "11111111111111111111111111111111")
+            buildConfigField("String", "TOKEN", "\"123123123123\"")
         }
     }
     compileOptions {
@@ -73,6 +73,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidx.core.splashscreen)
+
 
     // DI
     implementation(platform(libs.koin.bom))

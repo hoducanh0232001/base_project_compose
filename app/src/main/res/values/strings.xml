@@ -3,4 +3,5 @@
     <string name="no">No</string>
     <string name="cancel">Cancel</string>
     <string name="ok">Ok</string>
+    <string name="no_internet_connection">No internet connection</string>
 </resources>
